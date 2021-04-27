@@ -8,7 +8,7 @@ style: |
     img[alt~="center"]{display:block;margin: 0 auto;}
 
 ---
-Estadistica Computacional
+Estadística Computacional
 ===
 ![center  h:400](./imagenes/probabilidades.jpg)
 ### Introducción a Teoría de Probabilidades :game_die: :black_joker: 
@@ -16,6 +16,7 @@ Estadistica Computacional
 
 ---
 # Temario
+- ¿Qué es la Teoría de la Probabilidad?
 - Conceptos Básicos.
 - Axiomas y Propiedades.
 - Probabilidad de un Evento
@@ -24,12 +25,24 @@ Estadistica Computacional
 - Independencia Probabilística
 
 ---
+# ¿Qué es la Teoría de la Probabilidad?.
+La teoría de la probabilidad estudia fenómenos aleatorios y estocásticos. 
+
+Los fenómenos aleatorios se contraponen a los fenómenos deterministas, en los que conocer todos los factores de un experimento permite predecir exactamente el resultado del mismo. 
+> Si se calienta agua a 100 ºC a nivel del mar se obtendrá vapor. :teapot:
+***
+En cambio, los fenómenos aleatorios son aquellos en que no se puede predecir o reproducir el resultado exacto de cada experiencia particular. 
+> El lanzamiento de un dado o de una moneda. :coin:
+
+
+
+---
 # Conceptos Básicos.
 
 - Un **experimento** es cualquier acción o proceso cuyo resultado está sujeto a la incertidumbre, no se puede predecir el resultado exacto de cada experiencia particular.
 > Sacar dos cartas de un mazo de naipe ingles :spades::clubs::hearts::diamonds:
 
-- El **espacio muestral**, $\Omega$, de un experimento es el conjunto de todos los posibles resultadosde dicho experimento.
+- El **espacio muestral**, $\Omega$, de un experimento es el conjunto de todos los posibles resultados de dicho experimento.
 > Todas las combinaciones posibles al sacar dos cartas de un mazo de naipe ingles (:spades::hearts:,:clubs::diamonds:, etc)
 
 ***
@@ -37,8 +50,8 @@ Estadistica Computacional
 - Un **evento** es cualquier subconjunto de resultados contenidos en el espacio muestral.
 > Sacar dos cartas de pinta color rojo :hearts::diamonds: 
 
--  Se dice que dos eventos son **mutuamente excluyentes** (disjuntos) si ninguno de los dos eventos pueden suceder simultaneamente.
-
+-  Se dice que dos eventos son **mutuamente excluyentes** (disjuntos) si ninguno de los dos eventos pueden suceder simultáneamente.
+***
 - Se dice que dos eventos son **equiprobables** cuando ambos tienen las mismas oportunidades de ocurrir.
 
 - Se dice que un grupo de eventos es **exhaustivos** si la union de todos estos es igual al espacio muestral.
@@ -70,7 +83,7 @@ Sea $|\Omega|$ el tamaño del espacio muestral, *resultados posibles*, y $|A|$ e
 $$P(A)=\frac{|A|}{|\Omega|} $$
 
 > En un mazo de 52 cartas de naipe ingles la cantidad de cartas de pinta roja, :hearts::diamonds:, es 26.
->Con lo que la probabilidad de escojer una carta de pinta roja es igual $\frac{26}{52}=0.5$ 
+>Con lo que la probabilidad de escoger una carta de pinta roja es igual $\frac{26}{52}=0.5$ 
 
 
 ---
@@ -98,7 +111,7 @@ $$P(B)= \sum_{i=1}^{k} P(A_i \cap B) = \sum_{i=1}^{k} P(A_i|B)\cdot P(A_i)$$
 
 $$P(A_i|B)=\frac{P(A_i\cap B)}{P(B)}=\frac{P(B|A_i)\cdot P(A_i)}{P(B)}$$
 
-> Si existen pocos eventos en la particion se puede un diagrama de arbol para calcular las probabilidades :smile:.  
+> Si existen pocos eventos en la partición se puede realizar un diagrama de árbol para calcular las probabilidades :smile:.  
 
 ---
 # Independencia Probabilística
