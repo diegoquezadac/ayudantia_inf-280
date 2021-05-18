@@ -105,7 +105,7 @@ Sean $A_1, \dots,  A_k$ eventos mutuamente excluyentes y exhaustivos y otro even
 
 
 
-$$P(B)= \sum_{i=1}^{k} P(A_i \cap B) = \sum_{i=1}^{k} P(A_i|B)\cdot P(A_i)$$
+$$P(B)= \sum_{i=1}^{k} P(A_i \cap B) = \sum_{i=1}^{k} P(B|A_{i})\cdot P(A_i)$$
 ***
 - **Regla de Bayes**
 
