@@ -103,7 +103,7 @@ La función de distribución acumulada asociada a una variable aleatoria $X$, es
  
 ***
 
-- La **varianza** de una variable aleatoria $X$ , es el número $V[X]$ (en ocasiones $\sigma^2$) que representa la dispersión de la variable aleatoria. Esta definida como la esperanza del cuadrado de la desviación de dicha variable respecto a su media, $E[(X-\mu)^2]$.
+- La **varianza** de una variable aleatoria $X$ , es el número $V[X]$ (en ocasiones $\sigma^2$) que representa la dispersión de la variable aleatoria. Esta se define como la esperanza del cuadrado de la desviación de dicha variable respecto a su media, $E[(X-\mu)^2]$.
 
     - $\displaystyle V[X] = \sum_{x} (x-\mu)^2 \cdot p(x)$,$\quad$ si $X$ es discreta.
 
