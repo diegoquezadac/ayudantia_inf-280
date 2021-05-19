@@ -117,10 +117,120 @@ Distribuciones Discretas.
 ===
 ![center  h:400](./imagenes/unnamed.gif)
 
+---
+# Distribución de Bernoulli.
+Sea $X$ es una v.a. que mide los dos posibles resultados de un único experimento (éxito o fracaso), se dice que $X$ tiene una distribución de Bernoulli de parámetro $p$. Esta toma valor 1 para la probabilidad de éxito ($p$) y valor 0 para la probabilidad de fracaso ($1-p$).
+
+***
+
+* **Función de Probabilidad.**
+    $$p(x;p)=\begin{cases} p& x=1\\(1-p)& x=0\\0 & \text{cualquier caso}   \end{cases}$$
+
+* $E[X] =p$
+* $V[X]=p\cdot (1-p)$
 
 
+
+---
+# Distribución Binomial.
+Sea $X$ es una v.a. que mide el número de éxitos en una secuencia de $n$ experimentos de Bernoulli independientes entre sí con una probabilidad fija $p$ de ocurrencia de éxito entre los experimentos, se dice que $X$ tiene una distribución Binomial de parámetro $p$ y $n$.
+
+***
+
+* **Función de Probabilidad.**
+    $$b(x;n,p)=\begin{cases} \displaystyle\binom{n}{x}p^{x}(1-p)^{n-x}& x=0,1,2,\dots,n\\0 & \text{cualquier caso}   \end{cases}$$
+
+* $E[X] = n\cdot p$ 
+* $V[X] = n\cdot p\cdot (1 - p)$
+        
+```R
+dbinom(x, size=n, prob=p) #Función de masa de probabilidad.
+pbinom(q, size=n, prob=p) #Función de distribución acumulada hasta q.
+```
+ 
+---
+# Distribución de Poisson.
+Sea $X$ es una v.a. que mide el número de eventos durante cierto período de tiempo a partir de una frecuencia de ocurrencia media, se dice que $X$ tiene una distribución Poisson de parámetro $\lambda$.
+
+***
+
+* **Función de Probabilidad.**
+    $$p(x;\lambda)=\begin{cases} \displaystyle\frac{e^{-\lambda}\lambda^{x}}{x!}& x=0,1,2,\dots \\0 & \text{cualquier caso}   \end{cases}$$
+
+* $E[X] = V[X] = \lambda$
+        
+```R
+dpois(x, lambda) #Función de masa de probabilidad.
+ppois(q,lambda) #Función de distribución acumulada hasta q.
+```
+>Esta distribución se especializa en la probabilidad de ocurrencia de sucesos con probabilidades muy pequeñas. :open_mouth:
 
 ---
 Distribuciones Continuas.
 ===
 ![center  h:400](./imagenes/SQDVZ.png)
+
+
+---
+# Distribución Uniforme.
+Cuando $X$ sigue una *distribución uniforme*, todos los rangos de valores que toma $X$ tienen igual probabilidad.
+
+* **Función de Probabilidad.**
+    $$f(x; A, B) =  \begin{cases} \displaystyle\frac{1}{B-A}  & A\le x\le B\\ 0 & \text{de lo contrario} \end{cases} $$
+
+
+* $E[X] = \frac{A+B}{2}$
+* $V[X] = \frac{(B-A)^2}{12}$
+        
+```R
+punif(q, min = A, max = B) #Función de distribución acumulada hasta q.
+```
+
+---
+# Distribución Normal.
+Se dice que una v.a. continua $X$ tiene una *distribución normal* con parámetros $\mu$ y $\sigma$, donde $x \in \mathbb{R}$ y $\sigma >0$, si su función de probabilidad:
+
+$$f(x;\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}e^{-{\frac{(x-\mu)^2}{2\sigma^{2}}}}$$
+
+
+* $E[X] = \mu$ y $V[X] = \sigma^2$
+
+        
+```R
+pnorm(q, mean , sd) #Función de distribución acumulada hasta q.
+```
+> La estatura, el efecto de un fármaco, el cociente intelectual tienen una distribución normal. :nerd_face:
+
+---
+## Distribución Normal Estándar.
+Cuando la distribución normal toma valores de parámetro $\mu=0$ y $\sigma= 1$ se conoce *distribución normal estándar*. Cunado una v.a. sigue una distribución normal estándar se denotará por $Z$ y tiene función de probabilidad:
+
+$$f(z;\mu,\sigma)=\frac{1}{\sqrt{2\pi}}e^{\frac{z^{2}}{2}}$$
+
+> La función de distribución acumulativa de $Z$ se denota $\Phi(z)$.
+***
+### Estandarización o Normalización.
+Si $X$ tiene una distribución normal con media $\mu$ y desviación estándar $\sigma$, entonces $Z=\frac{X-\mu}{\sigma}$ tiene una distribución normal estándar.
+$$
+\begin{align*}
+    P(a\le X\le b)&=P\left(\frac{a-\mu}{\sigma}\le Z \le \frac{b-\mu}{\sigma}\right)\\
+    &= \Phi\left(\frac{b-\mu}{\sigma}\right)-\Phi\left(\frac{a-\mu}{\sigma}\right)
+\end{align*}
+$$	
+
+> De este modo podemos usar los valores tabulados de la distribución normal estándar para encontrar valores de la función de distribución de cualquier otra distribución normal. :scream:
+
+---
+# Distribución Exponencial.
+Se dice que $X$ tiene una distribución exponencial con parámetro $\lambda (\lambda > 0)$ si la función de probabilidad es:
+
+$$f(x;\lambda)=\begin{cases} \displaystyle \lambda e^{-\lambda x}  & x\ge0 \\0 & \text{cualquier caso}   \end{cases}$$
+
+
+* $E[X] = \frac{1}{\lambda}$
+* $V[X] = \frac{1}{\lambda^{2}}$
+
+```R
+pexp(q, rate) #Función de distribución acumulada hasta q.
+```
+>La distribución exponencial se utiliza para modelar tiempos de espera para la ocurrencia de un cierto evento. :hourglass_flowing_sand:
