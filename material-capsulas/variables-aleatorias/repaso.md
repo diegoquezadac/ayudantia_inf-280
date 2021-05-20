@@ -30,7 +30,7 @@ Una variable aleatoria es una función que tiene como dominio el espacio muestra
 
 La notación $X(\omega) = x$ significa que $x$ es el valor asociado con el resultado $\omega$ por la v.a. $X$. 
 
-> En el experimento de lanzar dos monedas, el espacio muestral viene dado por $\{CC,SS,CS,SC\}$. De esto modo podemos asociar a cada suceso del experimento el número de caras obtenidas, la v.a. Ahora el rango seria $\{0,1,2\}$ :coin:.
+> En el experimento de lanzar dos monedas, el espacio muestral viene dado por $\{CC,SS,CS,SC\}$. De esto modo podemos asociar a cada suceso del experimento el número de caras obtenidas. Con lo que el rango seria $\{0,1,2\}$ :coin:.
 
 
 
@@ -41,7 +41,7 @@ La notación $X(\omega) = x$ significa que $x$ es el valor asociado con el resul
 Para variables con valores en $\mathbb{R}$ las variables aleatorias se clasifican usualmente en:
 
 - **Discretas**. Es una variable aleatoria cuyos valores posibles constituyen un conjunto finito o pueden ser puestos en una secuencia infinita ordenada.
-> Se sacan 2 bolas de una urna que contiene 4 rojas y 3 negras. Los posibles resultados la variable aleatoria, el número de bolas rojas, son $\{0,1,2\}$ :red_circle::black_circle:.
+> Se sacan 2 bolas de una urna que contiene 4 rojas y 3 negras. Los posibles resultados de la variable aleatoria, el número de bolas rojas, son $\{0,1,2\}$ :red_circle::black_circle:.
 
 
 ***
@@ -133,7 +133,7 @@ Sea $X$ es una v.a. que mide los dos posibles resultados de un único experiment
 
 ---
 # Distribución Binomial.
-Sea $X$ es una v.a. que mide el número de éxitos en una secuencia de $n$ experimentos de Bernoulli independientes entre sí con una probabilidad fija $p$ de ocurrencia de éxito entre los experimentos, se dice que $X$ tiene una distribución Binomial de parámetro $p$ y $n$.
+Sea $X$ es una v.a. que mide el número de éxitos en una secuencia de $n$ experimentos de Bernoulli independientes entre sí con una probabilidad fija $p$ de ocurrencia de éxito entre los experimentos, se dice que $X$ tiene una distribución Binomial de parámetro $n$ y $p$.
 
 ***
 
@@ -222,7 +222,7 @@ $$
 
 ---
 # Distribución Exponencial.
-Se dice que $X$ tiene una distribución exponencial con parámetro $\lambda (\lambda > 0)$ si la función de probabilidad es:
+Se dice que $X$ tiene una *distribución exponencial* con parámetro $\lambda (\lambda > 0)$ si la función de probabilidad es:
 
 $$f(x;\lambda)=\begin{cases} \displaystyle \lambda e^{-\lambda x}  & x\ge0 \\0 & \text{cualquier caso}   \end{cases}$$
 
@@ -231,6 +231,21 @@ $$f(x;\lambda)=\begin{cases} \displaystyle \lambda e^{-\lambda x}  & x\ge0 \\0 &
 * $V[X] = \frac{1}{\lambda^{2}}$
 
 ```R
-pexp(q, rate) #Función de distribución acumulada hasta q.
+pexp(q, lambda) #Función de distribución acumulada hasta q.
 ```
 >La distribución exponencial se utiliza para modelar tiempos de espera para la ocurrencia de un cierto evento. :hourglass_flowing_sand:
+
+
+---
+# Distribución de Rayleigh.
+Se dice que $X$ tiene una *distribución rayleigh* con parámetro $\alpha$ si la función de probabilidad de $X$ es:
+
+$$f(x;\alpha)=\begin{cases}\frac{x}{\alpha^{2}}e^{\left(-\frac{x^{2}}{2\alpha^{2}}\right)} & x\ge 0\\  0 & \text{de lo contrario} \end{cases}$$
+
+
+* $E[X] = \alpha\frac{\sqrt{2\pi}}{2}$
+* $V[X] = \alpha^{2}\frac{4-\pi}{2}$
+
+```R
+prayleigh(q, alpha) #Función de distribución acumulada hasta q.
+```
