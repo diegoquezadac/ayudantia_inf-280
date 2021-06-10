@@ -23,7 +23,6 @@ Estadística Computacional
 - Función Generadora de Momentos.
     - Teoremas Importantes.  
 
-
 ---
 # Funciones de Variables Aleatorias.
 
@@ -39,14 +38,14 @@ La transformación *uno a uno* implica que cada valor $x$ está relacionado con 
 
 ***
 * **Caso Discreto.**
-Suponga que $X$ es una v.a. discreta con función masa de probabilidad $f_{x}$. Definimos una una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos,  $x = h^{-1}(y)$. Entonces, función masa de probabilidad de $Y$ es:
+Suponga que $X$ es una v.a. discreta con función masa de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, función masa de probabilidad de $Y$ es:
 
     $$f_{y}=f_{x}\left(h^{-1}(y)\right)$$
 
 ***
 
 * **Caso Continuo.**
-Suponga que $X$ es una variable aleatoria continua con de función densidad de probabilidad $f_{x}$. Definimos una una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos,  $x = h^{-1}(y)$. Entonces, la función densidad de probabilidad de $Y$ es:
+Suponga que $X$ es una variable aleatoria continua con función densidad de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, la función densidad de probabilidad de $Y$ es:
 
     $$f_{y}=f_{x}\left(h^{-1}(y)\right)\cdot \left|\frac{d\left(h^{-1}(y)\right)}{dy}\right|$$
 
@@ -102,7 +101,7 @@ $$
 >Los momentos son un conjunto de medidas descriptivas que se usan para caracterizar una distribución.
 
 ***
-Existe un procedimiento alternativo para determinar los momentos de una variable aleatoria, *la función generadora de momentos*. Esta tiene la ventaja de permitir compactar todos los momentos para una variable aleatoria en una sola expresión, la cual para la variable aleatoria $X$ es dada por:
+Existe un procedimiento alternativo para determinar los momentos de una variable aleatoria, la ***función generadora de momentos***. Esta tiene la ventaja de permitir compactar todos los momentos para una variable aleatoria en una sola expresión, la cual para la variable aleatoria $X$ es dada por:
 
 $$
 \phi_{X}(t)=E\left[e^{tX}\right]=\begin{cases}\displaystyle
@@ -111,7 +110,7 @@ $$
     \end{cases}
 $$
 
-> Las $fgm$ existirán sólo si la sumatoria o integral converge.
+> Las `fgm`  existirán sólo si la sumatoria o integral converge.
 
 ***
 
@@ -122,4 +121,13 @@ $$
 m_{r}=\left.\frac{d^{r}\phi_{X}(t)}{dt^{r}}\right|_{t=0}
 $$
 
+> Si las `fgm` de dos variables aleatorias $X$ y $Y$ son iguales para cualquier $t$, entonces $X$ y $Y$ tienen la misma distribución de probabilidad. :money_mouth_face:
+---
+## Teoremas importantes
 
+1. $\phi_{aX+b}(t) = e^{b\cdot t}\cdot\phi_{X}(a\cdot t)$
+
+2. Si $X_{1}, X_{2}, \dots, X_{n}$ son v.a. independientes con funciones generadoras de momentos $\phi_{X_{n}}(t)$, y $Y=X_{1}+ X_{2}+ \dots+ X_{n}$, entonces:
+$$
+\phi_{Y}(t)=\phi_{X_{1}}(t)\times \phi_{X_{2}}(t)\times \dots \times \phi_{X_{n}}(t)
+$$
