@@ -54,7 +54,7 @@ debe cumplirse que $p(x,y)\ge 0$ y $\displaystyle\sum_x \sum_y p(x,y)=1$.
 ### Función Masa de Probabilidad Marginal
 La función masa de probabilidad marginal de una v.a. discreta perteneciente a un *vector discreto* se obtiene sumando las probabilidades conjuntas correspondientes a todos los valores posibles de las otras v.a. Para el caso dos variables aleatorias discretas $X$ y $Y$ con `fmpc` $p(x,y)$:
 
-$$p_x(x)=\sum_y p(x,y) \quad p_y(x)=\sum_x p(x,y) $$
+$$p_x(x)=\sum_y p(x,y) \quad p_y(y)=\sum_x p(x,y) $$
 
 
 ***
@@ -167,7 +167,7 @@ Sea $X$ el vector aleatorio $(X_1,\dots,X_n)$. Cuando cada coordenada del vector
 $$
 E(X)=\mu=(E(X_1),\dots,E(X_n))
 $$
-> En ocasiones suele escribirse la espereza como un vector columna :nerd_face:.
+> En ocasiones suele escribirse la esperanza como un vector columna :nerd_face:.
 *** 
 ## Varianza
 Sea $X$ el vector aleatorio $(X_1,\dots,X_n)$. Cuando cada coordenada del vector tiene primer y segundo momento finito entonces la varianza de $X$ se define como la matriz cuadrada
