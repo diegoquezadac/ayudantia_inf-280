@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:400](./imagenes/probabilidades.jpg)
+![center  h:400](./images/probabilidades.jpg)
 ### Introducción a Teoría de Probabilidades :game_die: :black_joker: 
 ###### Braulio Fuentes - Diego Quezada
 
@@ -123,5 +123,4 @@ Cuando ambos eventos son independientes tenemos que:
 - $P(A \cap B) = P(A) \cdot P(B)$
 
 En caso contrario, ambos eventos son dependientes.
-
 

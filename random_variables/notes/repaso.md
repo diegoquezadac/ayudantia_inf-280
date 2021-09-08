@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:300](./imagenes/random-variable-1.svg)
+![center  h:300](./images/random-variable-1.svg)
 ### Variables Aleatorias :chart_with_upwards_trend::bar_chart:
 ###### Braulio Fuentes - Diego Quezada
 
@@ -100,7 +100,7 @@ La función de distribución acumulada asociada a una variable aleatoria $X$, es
     - $\displaystyle E[X] = \int_{-\infty}^{+\infty} x\cdot f(x)\,dx$,$\quad$ si $X$ es continua.
 
     > Es un concepto análogo a la media aritmética de un conjunto de datos. :open_mouth:
- 
+
 ***
 
 - La **varianza** de una variable aleatoria $X$ , es el número $V[X]$ (en ocasiones $\sigma^2$) que representa la dispersión de la variable aleatoria. Esta se define como la esperanza del cuadrado de la desviación de dicha variable respecto a su media, $E[(X-\mu)^2]$.
@@ -147,7 +147,7 @@ Sea $X$ es una v.a. que mide el número de éxitos en una secuencia de $n$ exper
 dbinom(x, size=n, prob=p) #Función de masa de probabilidad.
 pbinom(q, size=n, prob=p) #Función de distribución acumulada hasta q.
 ```
- 
+
 ---
 # Distribución de Poisson.
 Sea $X$ es una v.a. que mide el número de eventos durante cierto período de tiempo a partir de una frecuencia de ocurrencia media, se dice que $X$ tiene una distribución Poisson de parámetro $\lambda$.
@@ -195,7 +195,7 @@ $$f(x;\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}e^{-{\frac{(x-\mu)^2}{2\sigma^{2}}}
 
 * $E[X] = \mu$ y $V[X] = \sigma^2$
 
-        
+  ​      
 ```R
 pnorm(q, mean , sd) #Función de distribución acumulada hasta q.
 ```
@@ -216,7 +216,7 @@ $$
     P(a\le X\le b)&=P\left(\frac{a-\mu}{\sigma}\le Z \le \frac{b-\mu}{\sigma}\right)\\
     &= \Phi\left(\frac{b-\mu}{\sigma}\right)-\Phi\left(\frac{a-\mu}{\sigma}\right)
 \end{align*}
-$$	
+$$
 
 > De este modo podemos usar los valores tabulados de la distribución normal estándar para encontrar valores de la función de distribución de cualquier otra distribución normal. :scream:
 

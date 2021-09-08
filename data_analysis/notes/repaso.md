@@ -10,7 +10,7 @@ style: |
 ---
 Estadistica Computacional
 ===
-![center w:600 h:400](./imagenes/boxplot.jpg)
+![center w:600 h:400](./images/boxplot.jpg)
 ### :a:nalisis de datos
 ###### Braulio Fuentes - Diego Quezada
 
@@ -96,7 +96,7 @@ $$
 
 Propiedades analogas se pueden inferir tomando la raiz de las propiedades de la varianza.
 
---- 
+---
 ## Desviacion media
 
 $$
@@ -115,7 +115,7 @@ $$
 CV  = \frac{S}{\overline{x}}
 $$
 
---- 
+---
 
 # Medidas de localizacion
 
@@ -214,7 +214,5 @@ $$f_r(x_i, y_j) = f_r(x_i) \cdot f_r(y_j), \space \forall i,j $$
 ---
 
 $$
-
 \left( \begin{array}{cccc}   & B_1 & B_2 &\cdots &B_s & TOTAL \\   A_1 & f_{11} &f_{12} & \cdots & f_{1s} & f_{1 \cdot} \\  \vdots & \vdots &\vdots & \vdots & \ddots & \vdots\\  A_r & f_{r1} & f_{r2}&\cdots & f_{rs} & f_{r \cdot}\\ TOTAL & f_{\cdot 1}&f_{\cdot 2}& \cdots& f_{\cdot s}& f_{\cdot \cdot}\end{array} \right) \\
-
 $$

@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:300](./imagenes/likelihood.png)
+![center  h:300](./images/likelihood.png)
 ### Inferencia estadística
 ###### Braulio Fuentes - Diego Quezada
 
@@ -125,9 +125,11 @@ $$
 
 1. Asintóticamente insesgado.
 2. Asintóticamente normal.
+    
     > $\frac{\hat{\theta} - \theta}{\sqrt{V[\hat{\theta}]}}  \rightsquigarrow N(0,1)$
 3. Asintóticamente eficiente.
 4. Invariante bajo transformaciones biunívocas.
+    
     > Sea ${\hat{\theta}}$ el EMV de ${\theta}$, entonces para cualquier funcion $h({\theta})$ biunívoca, $h({\hat{\theta}})$ es el EMV.
 5. Si existe un estimador suficiente, entonces EMV lo es.
 

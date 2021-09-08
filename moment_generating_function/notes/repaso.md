@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:350](./imagenes/lognormal-distribution.jpg)
+![center  h:350](./images/lognormal-distribution.jpg)
 ### Funciones de Variables Aleatorias y Generadora de Momentos :chart_with_upwards_trend: :monocle_face:	
 ###### Braulio Fuentes - Diego Quezada
 
@@ -38,14 +38,14 @@ La transformación *uno a uno* implica que cada valor $x$ está relacionado con 
 
 ***
 * **Caso Discreto.**
-Suponga que $X$ es una v.a. discreta con función masa de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, función masa de probabilidad de $Y$ es:
+  Suponga que $X$ es una v.a. discreta con función masa de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, función masa de probabilidad de $Y$ es:
 
     $$f_{y}=f_{x}\left(h^{-1}(y)\right)$$
 
 ***
 
 * **Caso Continuo.**
-Suponga que $X$ es una variable aleatoria continua con función densidad de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, la función densidad de probabilidad de $Y$ es:
+  Suponga que $X$ es una variable aleatoria continua con función densidad de probabilidad $f_{x}$. Definimos una transformación uno a uno $Y = h(X)$, de manera que la ecuación $y = h(x)$ se resuelva exclusivamente para $x$ en términos de $y$, digamos $x = h^{-1}(y)$. Entonces, la función densidad de probabilidad de $Y$ es:
 
     $$f_{y}=f_{x}\left(h^{-1}(y)\right)\cdot \left|\frac{d\left(h^{-1}(y)\right)}{dy}\right|$$
 
@@ -128,6 +128,7 @@ $$
 1. $\phi_{aX+b}(t) = e^{b\cdot t}\cdot\phi_{X}(a\cdot t)$
 
 2. Si $X_{1}, X_{2}, \dots, X_{n}$ son v.a. independientes con funciones generadoras de momentos $\phi_{X_{n}}(t)$, y $Y=X_{1}+ X_{2}+ \dots+ X_{n}$, entonces:
+
 $$
 \phi_{Y}(t)=\phi_{X_{1}}(t)\times \phi_{X_{2}}(t)\times \dots \times \phi_{X_{n}}(t)
 $$

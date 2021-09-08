@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:400](./imagenes/Multivariate_Gaussian.png)
+![center  h:400](./images/Multivariate_Gaussian.png)
 ### Distribuciones Multivariadas :chart_with_upwards_trend: :chart_with_downwards_trend:	
 ###### Braulio Fuentes - Diego Quezada
 
@@ -114,7 +114,7 @@ Sean $X$ y $Y$ variables aleatorias con esperanza y varianza finita y $a,b \in \
 
     * $E(X Y ) = E(X)\cdot E(Y)$
     *  $V(X \pm Y ) = V(X) + V(Y )$
-        
+       
 ---
 # Covarianza.
 La covarianza de dos variables aleatorias $X$ y $Y$, denotada por $Cov(X, Y )$, es:
@@ -125,7 +125,7 @@ $$Cov(X,Y)=E[(X-\mu_X)(Y-\mu_Y)]$$
 * Si $Cov(X, Y)>>0$, existe una fuerte relación positiva entre las v.a.
 * Si $Cov(X, Y)<<0$, existe una fuerte relación negativa entre las v.a.
 * Si $X$ y $Y$ no están fuertemente relacionadas la covarianza tendrá un valor cercano 0.
- 
+
 > El defecto de la covarianza es que su valor calculado depende críticamente de las unidades de medición :cry:.
 
 ***
@@ -168,7 +168,7 @@ $$
 E(X)=\mu=(E(X_1),\dots,E(X_n))
 $$
 > En ocasiones suele escribirse la esperanza como un vector columna :nerd_face:.
-*** 
+***
 ## Varianza
 Sea $X$ el vector aleatorio $(X_1,\dots,X_n)$. Cuando cada coordenada del vector tiene primer y segundo momento finito entonces la varianza de $X$ se define como la matriz cuadrada
 $$
@@ -242,4 +242,4 @@ $$
 $$
     f(x,y)=\frac{1}{2\pi}\cdot e^{\left(\frac{-1}{2}\cdot \left(x^2+y^2\right)\right)}
 $$
-        
+

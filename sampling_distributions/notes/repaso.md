@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:400](./imagenes/law-large-numbers.png)
+![center  h:400](./images/law-large-numbers.png)
 ### Distribuciones muestrales
 ###### Braulio Fuentes - Diego Quezada
 

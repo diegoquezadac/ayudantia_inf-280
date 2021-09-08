@@ -10,7 +10,7 @@ style: |
 ---
 Estadística Computacional
 ===
-![center  h:400](./imagenes/Statistical-hypothesis-testing-test-d-allowing-to-guarantee-a-prefixed-false-alarm-rate-l.png)
+![center  h:400](./images/Statistical-hypothesis-testing-test-d-allowing-to-guarantee-a-prefixed-false-alarm-rate-l.png)
 ### Test de Hipótesis
 ###### Braulio Fuentes - Diego Quezada
 
@@ -103,15 +103,15 @@ $$
     $$
 
 * **Tamaño de la muestra**
-El tamaño de una muestra $n$ con el cual una prueba de nivel $\alpha$ también tiene $\beta$ con unn valor alternativo $\mu'$ es:
-    $$
+  El tamaño de una muestra $n$ con el cual una prueba de nivel $\alpha$ también tiene $\beta$ con unn valor alternativo $\mu'$ es:
+  $$
     \begin{equation*}
         n=\begin{cases}\displaystyle
         \left[\frac{\sigma(z_{1-\alpha}+z_{1-\beta})}{\mu_{0}-\mu'}\right]^2 & \text{para una prueba de una cola}\\\displaystyle
         \left[\frac{\sigma(z_{1-\alpha/2}+z_{1-\beta})}{\mu_{0}-\mu'}\right]^2 & \text{para una prueba de dos cola}
         \end{cases}
     \end{equation*}
-    $$
+  $$
 ***
 ### Pruebas con muestras grandes
 
@@ -213,5 +213,4 @@ P(X\le x) & \text{para una test de cola inferior}\\
 $$
 
 > Generalmente, cuando $P$ es un valor muy pequeño se rechaza la hipótesis nula. :shushing_face:
-
 
